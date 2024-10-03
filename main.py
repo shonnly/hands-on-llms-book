@@ -19,10 +19,10 @@ generator = pipeline(
 )
 
 messages = [
-    {'role': 'user', 'content':'Create a funny joke about Canadian people.'}
+    {'role': 'user', 'content':'Write a funny joke about space travel.'}
 ]
 
 output = generator(messages)
 print(output[0]['generated_text'])
 
-# expected output should be something like this: "Why don't Canadian people ever get lost? Because they always have a map and a sense of direction!"
+# expected output should be something like this: "Why don't astronauts get lost in space? Because they always have their "GPS" - the Great Galactic Positioning System!"
